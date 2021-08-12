@@ -1,0 +1,11 @@
+.button {
+    font-size: 20px;
+
+    &:hover {
+        background: #000;
+    }
+
+    &--active {
+        background-color: green;
+    }
+}

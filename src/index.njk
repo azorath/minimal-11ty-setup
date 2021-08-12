@@ -1,0 +1,30 @@
+{% from 'header/index.njk' import header %}
+{% from 'button/index.njk' import button %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal 11ty Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {{ header(
+        'Header',
+        navItems=[
+            {
+                title: 'navlink 1',
+                link: '/'
+            },
+            {
+                title: 'navlink 2',
+                link: '/test'
+            }
+        ])
+    }}
+
+    {{ button(text='Click me') }}
+    {{ button(text='Click me too', class='button--active') }}
+</body>
+</html>

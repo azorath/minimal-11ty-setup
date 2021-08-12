@@ -1,0 +1,9 @@
+{% macro header(name, navItems) %}
+<header class="mainHeader">
+    <nav>
+      {% for item in navItems %}
+          <a href={{item.link}}>{{item.title}}</a>
+      {% endfor %}
+    </nav>
+</header>
+{% endmacro %}
